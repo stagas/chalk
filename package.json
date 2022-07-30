@@ -1,10 +1,9 @@
 {
-	"name": "chalk",
-	"version": "5.0.0",
-	"description": "Terminal string styling done right",
+	"name": "@stagas/chalk",
+	"version": "5.0.1",
+	"description": "Terminal string styling done right (+ CommonJS build)",
 	"license": "MIT",
-	"repository": "chalk/chalk",
-	"funding": "https://github.com/chalk/chalk?sponsor=1",
+	"repository": "stagas/chalk",
 	"module": "source/index.js",
 	"main": "dist/cjs/index.js",
 	"exports": {
@@ -30,6 +29,7 @@
 		"bench": "matcha benchmark.js",
 		"build": "npm run build:cjs",
 		"build:cjs": "esbuild --format=cjs --platform=node --bundle --sourcemap --outfile=dist/cjs/index.js source/index.js",
+		"prepush": "echo ok",
 		"prepack": "npm run clean && npm run build"
 	},
 	"files": [
